@@ -1,0 +1,65 @@
+.main {
+    height: 723px;
+}
+
+.main::before {
+    height: 723px;
+}
+
+
+
+
+.home {
+    flex-direction: column;
+    height: 650px;
+}
+
+.homeimg {
+    padding-top: 18px;
+}
+
+.homegr {
+    margin: 9px 0px;
+}
+
+.home img {
+    height: 309px;
+}
+
+.quotesh {
+    font-size: 4rem;
+}
+
+.quotes h2 {
+    font-size: 2rem;
+}
+
+.quotes h3 {
+    font-size: 2rem;
+}
+
+.quotesh2 {
+    font-size: 3rem;
+}
+
+.quotespara {
+    font-size: 1.3rem;
+    margin-top: 8px;
+}
+
+.btn {
+    padding: 14px;
+}
+
+.btn button {
+    font-size: 22px;
+}
+
+.donacont {
+    margin: 0px 30px;
+}
+
+
+
+
+

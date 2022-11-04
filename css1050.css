@@ -1,0 +1,18 @@
+.container
+{
+    position: static;
+    flex-direction: column;
+}
+
+.navname{
+    padding-left: 0;
+}
+
+.navbtn{
+    margin: 10px;
+}
+
+.about
+{
+    margin: 10px 50px;
+}

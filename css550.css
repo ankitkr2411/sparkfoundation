@@ -1,0 +1,35 @@
+.homeimg
+{
+    margin: 0;
+    padding: 0;
+}
+
+.home img{
+    height: 250px;
+}
+
+.homegr
+{
+    margin: 27px 0px;
+}
+
+.about
+{
+    margin: 10px 10px;
+    padding: 20px 10px;
+}
+
+.about h1 {
+    padding: 10px;
+
+}
+
+
+{
+    padding: 10px;
+}
+
+.aboutxt p
+{
+    text-align: center;
+}
