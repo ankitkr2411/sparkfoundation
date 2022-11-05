@@ -1,3 +1,24 @@
+
+.container{
+    padding: 10px 0px;
+}
+
+
+
+ul{
+    margin: 0;
+}
+
+.main
+{
+    height: 671px;
+}
+
+.main::before{
+    height: 671px;
+}
+
+
 .homeimg
 {
     margin: 0;
@@ -5,12 +26,12 @@
 }
 
 .home img{
-    height: 250px;
+    height: 230px;
 }
 
 .homegr
 {
-    margin: 27px 0px;
+    margin: 10px 0px;
 }
 
 .about
@@ -24,12 +45,37 @@
 
 }
 
-
-{
-    padding: 10px;
-}
-
 .aboutxt p
 {
     text-align: center;
+}
+
+
+.contact
+{
+    height: 649px;
+}
+
+.contact::before{
+    height: 670px;
+}
+
+.contact h1{
+    padding: 30px 55px 0px 55px;
+}
+
+.contform
+{
+    padding: 0px 50px;
+}
+
+.footer
+{
+    padding: 0px 30px 10px 30px;
+}
+
+.copy
+{
+    text-align: center;
+    padding: 10px 35px 10px 35px;
 }
