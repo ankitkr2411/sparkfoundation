@@ -12,6 +12,22 @@
     margin: 10px;
 }
 
+.home{
+    flex-direction: column;
+}
+
+.donacont{
+    padding: 20px 15px;
+}
+
+.donacont img{
+    width: 130px;
+}
+
+.donacont h1{
+    font-size: 2.5rem;
+}
+
 .about
 {
     margin: 10px 50px;
