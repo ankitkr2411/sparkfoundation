@@ -44,6 +44,15 @@ ul{
     display: inline;
 }
 
+#p2{
+    display: none;
+}
+
+#p3
+{
+    display: none;
+}
+
 .about h1 {
     padding: 10px;
 
