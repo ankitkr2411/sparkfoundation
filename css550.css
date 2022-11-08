@@ -40,6 +40,10 @@ ul{
     padding: 20px 10px;
 }
 
+.aboutxt button {
+    display: inline;
+}
+
 .about h1 {
     padding: 10px;
 
