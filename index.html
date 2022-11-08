@@ -92,7 +92,7 @@
                 financial feasibility and Socio-economic feasibility aspect of project based on Sustainable approach.
             </p>
             <br><br>
-            <p>In India, Poor Child Educational Development Foundation focuses on the empowerment of women and girls
+            <p id="p2">In India, Poor Child Educational Development Foundation focuses on the empowerment of women and girls
                 because they are disproportionately affected by poverty and discriminations; and suffer abuse and
                 violations in the realization of their rights, entitlements and access and control over resources. Also,
                 experience shows that, when equipped with the proper resources, women have the power to help whole
@@ -100,10 +100,16 @@
                 marginalisation and social injustice.
             </p>
             <br><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eos voluptatum accusamus molestiae nobis animi tempora, totam reprehenderit optio dolor maxime necessitatibus iure quasi at deserunt delectus molestias repudiandae neque dolorum. Nihil a iste impedit voluptates neque? Laborum ut tempore iusto expedita quibusdam minima officiis quam beatae distinctio quis harum dolores, doloribus inventore, 
-                id dolore placeat qui nisi sint a. Dolorem adipisci ipsam possimus, nemo quasi fugiat rerum similique aspernatur libero illum commodi dolore omnis unde facere odit dolor harum tenetur magnam. Voluptate similique omnis recusandae doloribus veniam tempore excepturi molestiae magnam praesentium quibusdam adipisci quas facilis quidem, blanditiis ipsum!</p>
+            <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eos voluptatum accusamus molestiae nobis
+                animi tempora, totam reprehenderit optio dolor maxime necessitatibus iure quasi at deserunt delectus
+                molestias repudiandae neque dolorum. Nihil a iste impedit voluptates neque? Laborum ut tempore iusto
+                expedita quibusdam minima officiis quam beatae distinctio quis harum dolores, doloribus inventore,
+                id dolore placeat qui nisi sint a. Dolorem adipisci ipsam possimus, nemo quasi fugiat rerum similique
+                aspernatur libero illum commodi dolore omnis unde facere odit dolor harum tenetur magnam. Voluptate
+                similique omnis recusandae doloribus veniam tempore excepturi molestiae magnam praesentium quibusdam
+                adipisci quas facilis quidem, blanditiis ipsum!</p>
 
-            <button> <a href="">Read More</a></button>
+            <button id="btn" onclick="show()">Read More</button>
         </div>
     </div>
 
@@ -192,6 +198,31 @@
         <p>Designed and Developed by: <span>ANKIT KUMAR</span></p>
 
     </div>
+    
+    <script>
+
+    function show()
+    {
+        let p2 = document.getElementById('p2');
+        let p3 = document.getElementById('p3');
+        let btn = document.getElementById('btn');
+
+        if(p2.style.display == 'none')
+        {
+            p2.style.display = 'block';
+            p3.style.display = 'block';
+            btn.innerHTML = 'Read less';
+        }
+
+        else
+        {
+            p2.style.display = 'none';
+            p3.style.display = 'none';
+            btn.innerHTML = 'Read More';
+
+        }
+    }
+</script>
 
 </body>
 
