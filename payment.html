@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Gateway</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Libre+Baskerville&family=Oswald&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+
+<style>
+
+   
+    .main {
+        /* border: 2px solid red; */
+        height: 690px;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .form {
+        border: 2px solid rgb(0, 255, 251);
+        background-color: rgb(236, 215, 255);
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+
+
+
+    .form_content{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        margin: 15px 70px;
+        
+    }
+
+    h1{
+        color: rgb(0, 93, 97);
+
+    }
+
+    label{
+        font-family: 'Josefin Sans', sans-serif;
+        color: rgb(8, 109, 132);
+        margin: 5px 0px;
+        font-weight: bold;
+        margin-left: 1px;
+    }
+
+    input{
+        padding: 5px 0px;
+        border-radius: 5px;
+    }
+
+    .btn {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    /* padding: 20px; */
+    }
+
+.btn input {
+    font-size: 20px;
+    padding: 10px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: azure;
+}
+
+.btn input:hover {
+    cursor: pointer;
+    background-color: rgb(194, 130, 254);
+    color: black;
+}
+
+.btn input:active {
+    background-color: rgb(74, 0, 144);
+}
+
+</style>
+
+
+<body>
+    <div class="main">
+        
+        <div class="form">
+            
+
+            <h1>Checkout Form</h1>
+
+            <div class="form_content">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Full Name">
+
+            </div>
+
+
+            <div class="form_content">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+
+            </div>
+
+
+            <div class="form_content">
+                <label for="contact">Contact:</label>
+                <input type="text" id="contact" name="contact" placeholder="Phone Number">
+
+            </div>
+
+
+            <div class="form_content">
+                <label for="amt">Amount:</label>
+                <input type="text" id="amt" name="amount" placeholder="Amount">
+
+            </div>
+
+            <div class="btn">
+                <input type="submit" onclick="pay()" value="Pay Now" class="btn">
+            </div>
+
+            
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- </form> -->
+
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous">
+    </script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+
+<script src="pay.js"></script>
+
+
+
+
+
+
+    <!-- // function pay() {
+
+    //     var name = jQuery('#name').val();
+    //     var email = jQuery('#email').val();
+    //     var contact = jQuery('#contact').val();
+    //     var amt = jQuery('#amt').val();
+    //     var id = Math.floor(10000000 + Math.random() * 90000000);
+    //     id = "OID"+id
+    //     console.log(id);
+
+    //     var options = {
+    //         "key": "rzp_test_KTatJ8FpcN3Dc1",
+    //         "amount": amt * 100,
+    //         "currency": "INR",
+    //         "name": "Acme Corp",
+    //         "description": "Test Transaction",
+    //         "image": "https://cdn.dribbble.com/userupload/3000719/file/original-da4a03bf50562a068dff070bc691f9dc.jpg?compress=1&resize=752x",
+    //         // "account_id": "acc_Ef7ArAsdU5t0XL",
+    //         // "order-id": id,
+    //         "handler": function (response) {
+    //             // console.log(response);
+    //             // alert(response.razorpay_payment_id);
+    //             // alert(response.razorpay_order_id);
+    //             // alert(response.razorpay_signature)
+    //             jQuery.ajax({
+    //                 success:function(result){
+    //                     window.location.href="thanks.html"
+    //                 }
+    //             })
+    //         },
+
+    //         "prefill": {
+    //             "name": name,
+    //             "email": email,
+    //             "contact": contact
+    //         },
+    //         "notes": {
+    //             "address": "Razorpay Corporate Office"
+    //         },
+    //         "theme": {
+    //             "color": "#3399cc"
+    //         }
+    //     };
+    //     var rzp1 = new Razorpay(options);
+    //     rzp1.on('payment.failed', function (response) {
+    //         alert(response.error.code);
+    //         alert(response.error.description);
+    //         alert(response.error.source);
+    //         alert(response.error.step);
+    //         alert(response.error.reason);
+    //         alert(response.error.metadata.order_id);
+    //         alert(response.error.metadata.payment_id);
+    //     });
+    //     rzp1.open();
+    // } -->
+
+
+</html>
