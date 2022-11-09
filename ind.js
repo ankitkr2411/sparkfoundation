@@ -21,32 +21,32 @@
     //     }
     // }
 
-    window.addEventListener('load', () =>{
-        let amt = localStorage.getItem('amount');
+//     window.addEventListener('load', () =>{
+//         let amt = localStorage.getItem('amount');
 
-        if(parseInt(amt) >=0)
-        {
-            document.getElementById('fundtext').innerHTML = amt;
-        }
+//         if(parseInt(amt) >=0)
+//         {
+//             document.getElementById('fundtext').innerHTML = amt;
+//         }
 
-        else{
-            document.getElementById('fundtext').innerHTML = 0;
-        }
+//         else{
+//             document.getElementById('fundtext').innerHTML = 0;
+//         }
 
-        let don = localStorage.getItem('donator');
+//         let don = localStorage.getItem('donator');
 
-        if(parseInt(don) >=0)
-        {
-            document.getElementById('donatortext').innerHTML = don;
-        }
+//         if(parseInt(don) >=0)
+//         {
+//             document.getElementById('donatortext').innerHTML = don;
+//         }
 
-        else{
-            document.getElementById('donatortext').innerHTML = 0;
-        }
+//         else{
+//             document.getElementById('donatortext').innerHTML = 0;
+//         }
         
 
 
-    });
+//     });
 
 
 
