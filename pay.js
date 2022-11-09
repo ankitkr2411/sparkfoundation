@@ -24,39 +24,39 @@ function pay() {
             jQuery.ajax({
                 success:function(result){
 
-                    let amtsum;
-                    if(parseInt(localStorage.getItem('amount')) >= 0)
-                    {
-                        let am = parseInt(localStorage.getItem('amount'));
-                        amtsum = am+parseInt(amt);
+//                     let amtsum;
+//                     if(parseInt(localStorage.getItem('amount')) >= 0)
+//                     {
+//                         let am = parseInt(localStorage.getItem('amount'));
+//                         amtsum = am+parseInt(amt);
                         
-                    }
+//                     }
 
-                    else{
-                        amtsum = parseInt(amt);
+//                     else{
+//                         amtsum = parseInt(amt);
      
-                    }
+//                     }
 
-                    localStorage.setItem("amount",amtsum);
+//                     localStorage.setItem("amount",amtsum);
 
 
-                    let donasum;
-                    if(parseInt(localStorage.getItem('donator')) >= 0)
-                    {
-                        let dona = parseInt(localStorage.getItem('donator'));
-                        console.log(dona);
-                        donasum = dona+1;
+//                     let donasum;
+//                     if(parseInt(localStorage.getItem('donator')) >= 0)
+//                     {
+//                         let dona = parseInt(localStorage.getItem('donator'));
+//                         console.log(dona);
+//                         donasum = dona+1;
                         
-                    }
+//                     }
 
-                    else{
-                        donasum = 1;
+//                     else{
+//                         donasum = 1;
 
                         
-                    }
+//                     }
 
-                    console.log(donasum);
-                    localStorage.setItem("donator",donasum);
+//                     console.log(donasum);
+//                     localStorage.setItem("donator",donasum);
                      window.location.href="thanks.html"
                     
                 }
