@@ -1,0 +1,135 @@
+
+.navimg{
+    height: 35px;
+    width: 43px;
+}
+
+
+.navname h1{
+    font-size: 35px;
+}
+
+.navbtn{
+    position: fixed;
+    bottom: 10px;
+    
+}
+
+
+.hamb{
+    top: 15px;
+    left: 20px;
+}
+
+
+
+
+.nav-menu2{
+    top: 20px;
+    justify-content: center;
+}
+
+.list{
+    font-size: .8rem;
+}
+
+
+.nav-menu2.active{
+    top: 60px;
+    justify-content: center;
+}
+
+ul{
+    margin: 0;
+}
+
+.main
+{
+    height: 671px;
+}
+
+.main::before{
+    height: 671px;
+}
+
+
+.homeimg
+{
+    margin: 0;
+    padding: 0;
+}
+
+.home img{
+    height: 230px;
+}
+
+.homegr
+{
+    margin: 10px 0px;
+}
+
+.about
+{
+    margin: 10px 10px;
+    padding: 20px 10px;
+}
+
+.aboutxt button {
+    display: inline;
+}
+
+#p2{
+    display: none;
+}
+
+#p3
+{
+    display: none;
+}
+
+
+.about h1 {
+    padding: 10px;
+
+}
+
+.aboutxt p
+{
+    text-align: center;
+}
+
+
+.donacont {
+    margin: 0px 20px;
+}
+
+
+
+.contact
+{
+    height: 649px;
+}
+
+.contact::before{
+    height: 670px;
+}
+
+.contact h1{
+    padding: 30px 55px 0px 55px;
+}
+
+.contform
+{
+    padding: 0px 50px;
+}
+
+.footer
+{
+    padding: 0px 30px 10px 30px;
+}
+
+.copy
+{
+    text-align: center;
+    padding: 10px 35px 10px 35px;
+}

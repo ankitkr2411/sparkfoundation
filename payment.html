@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <title>Payment Gateway</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Libre+Baskerville&family=Oswald&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="paymentfull.css">
+    <link rel="stylesheet" media="screen and (max-width: 400px)" href="payment425.css">
+
+
+
+</head>
+
+
+
+  
+
+
+
+<body>
+    <div class="main">
+        
+        <div class="form">
+            
+
+            <h1>Checkout Form</h1>
+
+            <div class="form_content">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Full Name">
+
+            </div>
+
+
+            <div class="form_content">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+
+            </div>
+
+
+            <div class="form_content">
+                <label for="contact">Contact:</label>
+                <input type="text" id="contact" name="contact" placeholder="Phone Number">
+
+            </div>
+
+
+            <div class="form_content">
+                <label for="amt">Amount:</label>
+                <input type="text" id="amt" name="amount" placeholder="Amount">
+
+            </div>
+
+            <div class="btn">
+                <input type="submit" onclick="pay()" value="Pay Now" class="btn">
+            </div>
+
+            
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous">
+    </script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+
+<script src="pay.js"></script>

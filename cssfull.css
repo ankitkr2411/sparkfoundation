@@ -1,0 +1,464 @@
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 12;
+    align-items: center;
+    padding: 10px 100px;
+    justify-content: center;
+    color: white;
+    background-color: rgb(0, 86, 152);
+    box-shadow: 0px 5px 15px rgb(52, 52, 52);
+}
+
+.navimg {
+    height: 50px;
+    width: 60px;
+    border-radius: 100%;
+    
+}
+
+.navname {
+    font-family: 'Island Moments', cursive;
+    padding-left: 10px;
+}
+
+.navname h1 {
+    font-size: 40px;
+}
+
+
+
+
+
+.nav-menu {
+    display: flex;
+    margin: 0 auto;
+}
+
+.nav-menu2{
+    display: none;
+}
+
+.list {
+
+    list-style: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.list a {
+    font-family: 'Libre Baskerville', serif;
+    text-decoration: none;
+    
+}
+
+
+
+.list:hover {
+    background-color: blue;
+    
+    cursor: pointer;
+}
+
+.list:active {
+    background-color: rgb(111, 111, 255);
+}
+
+.navbtn {
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 20px;
+    border-width: 0;
+    transition: all 0.1s ease-in-out;
+
+}
+
+
+
+.navbtn a {
+    font-size: 15px;
+    text-decoration: none;
+    color: blue;
+
+}
+
+.navbtn:hover {
+    background-color: bisque;
+}
+
+.navbtn:active {
+    background-color: rgb(167, 150, 129);
+}
+
+
+.hamb{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+
+
+.main {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    background: url('https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/11/holding_hands_in_support-1296x728-header-1296x728.jpg?w=1155&h=1528') no-repeat center center/cover;
+    width: 100%;
+    height: 650px;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+}
+
+
+.homeimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.homegr
+{
+    margin: 0px 60px;
+}
+
+
+.home img {
+    height: 350px;
+    border-radius: 10%;
+    box-shadow: 0px 0px 15px rgb(52, 52, 52);
+}
+
+.quotes {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Signika Negative', sans-serif;
+    text-align: center;
+}
+
+
+
+.quotesh {
+    color: rgb(228, 129, 0);
+    font-size: 5rem;
+}
+
+.quotes h2 {
+    color: rgb(0, 19, 72);
+    font-size: 3rem;
+}
+
+.quotes h3 {
+    color: rgb(0, 19, 72);
+    font-size: 3rem;
+}
+
+.quotesh2 {
+    color: rgb(0, 19, 72);
+    font-size: 4rem;
+}
+
+.blue {
+
+    color: rgb(0, 29, 248);
+}
+
+.bird {
+    color: rgb(255, 247, 0);
+    
+}
+
+
+
+.quotespara {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.btn button {
+    font-size: 27px;
+    padding: 15px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: rgb(74, 0, 144);
+    color: azure;
+    box-shadow: inset 3px 3px 10px rgba(159, 159, 159, 0.7);
+    transition: all 0.1s ease-in-out;
+}
+
+.btn button:hover {
+    cursor: pointer;
+    background-color: rgb(119, 11, 219);
+    color: black;
+}
+
+.btn button:active {
+    background-color: rgb(153, 79, 223);
+}
+
+.about {
+    background-color: rgb(0, 255, 234);
+    text-align: center;
+    padding: 30px;
+    padding-top: 30px;
+    margin: 10px 150px;
+    border-radius: 20px;
+}
+
+.about h1 {
+    color: rgb(0, 8, 255);
+}
+
+.aboutxt {
+    padding: 50px;
+    padding-bottom: 10px;
+}
+
+.aboutxt p {
+    color: rgb(138, 138, 138);
+    font-family: 'Cabin', sans-serif;
+    text-align: justify;
+    letter-spacing: 1px;
+
+}
+
+.aboutxt button {
+    display: none;
+    color: white;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 1rem;
+    border-style: none;
+    background-color: rgb(228, 129, 0);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.aboutxt button:hover {
+    background-color: rgb(0, 42, 127);
+}
+
+.aboutxt button:active {
+    background-color: rgb(40, 112, 255);
+}
+
+.contact {
+    position: relative;
+    padding: 20px 0px;
+    height: 580px;
+
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    background: url('https://media.istockphoto.com/id/1180650814/vector/contact-icon-futuristic-digital-abstract-blue-background.jpg?s=612x612&w=0&k=20&c=IKKBDp4o0ZNIsqfTQNoZBwZJidfXvkxoTJAxc2ZypEE=') no-repeat center center/cover;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity: .7;
+
+}
+
+.contact h1 {
+    font-family: 'Signika Negative', sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    
+    text-align: center;
+    color: rgb(196, 255, 113);
+}
+
+.contform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 600;
+    color: rgb(82, 241, 255);
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+
+}
+
+.inp,
+.contform textarea {
+    padding: 5px;
+    width: 100%;
+    font-family: sans-serif;
+    border-radius: 2px;
+    border-style: none;
+}
+
+input {
+    text-align: center;
+}
+
+.contgroup {
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+.formbtn {
+    width: 50%;
+    font-size: 20px;
+    padding: 10px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: azure;
+}
+
+.formbtn:hover {
+    cursor: pointer;
+    background-color: rgb(194, 130, 254);
+    color: black;
+}
+
+.formbtn:active {
+    background-color: rgb(74, 0, 144);
+}
+
+.submit {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.dona {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.donacont {
+    margin: 0 50px;
+    padding: 50px 30px;
+}
+
+.donacont img {
+    width: 150px;
+}
+
+.donacont h1 {
+    font-family: 'Lobster', cursive;
+    color: rgb(50, 50, 50);
+    font-size: 3rem;
+    margin: 10px 10px 0px 10px;
+    text-align: center;
+}
+
+.donacont p {
+    color: rgb(151, 151, 151);
+    letter-spacing: 2px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+
+}
+
+.proj
+{
+    margin-top: 15px;
+}
+
+
+.footer {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding-bottom: 10px;
+}
+
+.footer h1 {
+    padding: 20px;
+}
+
+.footer p {
+    width: 100%;
+}
+
+.copy 
+{
+    background-color: rgb(27, 27, 27);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.copy span 
+{
+    color: rgb(255, 140, 0);
+}
