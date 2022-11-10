@@ -45,11 +45,11 @@ ul{
 
 .main
 {
-    height: 671px;
+    height: 750px;
 }
 
 .main::before{
-    height: 671px;
+    height: 750px;
 }
 
 
