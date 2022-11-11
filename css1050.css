@@ -1,0 +1,77 @@
+
+.container
+{
+    position: relative;
+    padding: 10px 0px;
+}
+
+
+
+.navbtn{
+    position: absolute;
+    right: 20px;
+    margin: 10px;
+}
+
+.hamb{
+    position: absolute;
+    z-index: 15;
+    display: block;
+    top: 20px;
+    left: 30px;
+}
+
+.hamb.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.hamb.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamb.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu{
+    display: none;
+}
+
+.nav-menu2{
+    display: block;
+    position: absolute;
+    z-index: 11;
+    top: 30px;
+    display: flex;
+    background-color: rgb(0, 30, 54);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+.nav-menu2.active{
+    top:70px; 
+
+}
+
+.home{
+    flex-direction: column;
+}
+
+.donacont{
+    padding: 20px 15px;
+}
+
+.donacont img{
+    width: 130px;
+}
+
+.donacont h1{
+    font-size: 2.5rem;
+}
+
+.about
+{
+    margin: 10px 50px;
+}
